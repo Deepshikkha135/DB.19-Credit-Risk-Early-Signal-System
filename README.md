@@ -1,12 +1,12 @@
 # DB.19-Credit-Risk-Early-Signal-System
 
-**One-liner:** A lightweight, explainable Early Warning System (EWS-Lite) to detect credit-card delinquency risk 30–45 days early using behavioral features, a rule-based scoring engine, and an optional ML prototype.
+ A lightweight Early Warning System (EWS) to detect credit-card delinquency risk 30–45 days early using behavioral features, a rule-based scoring engine, and ML prototype.
 
 ---
 
 ## 📂 Dataset
 
-- **Dataset Used:** [UCI Credit Card Dataset](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients) (`UCI_Credit_Card.csv`)  
+- **Dataset Used:** [UCI Credit Card Dataset](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset) (`UCI_Credit_Card.csv`)  
 - **Size:** 30,000+ customer records with billing history, payment amounts, credit limits, and repayment status.  
 - **Target Variable:** `default.payment.next.month` (renamed `default`) — indicates whether a customer defaults next month.
 
@@ -14,7 +14,7 @@
 
 ## 📖 Workflow
 
-The ERSP-EWS-Lite system follows these steps:
+The EWS system follows these steps:
 
 1. **Data Input:** Load transactional and billing data for credit card customers.  
 2. **Feature Engineering:** Compute behavioral features including:
