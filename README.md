@@ -4,7 +4,7 @@
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 - **Dataset Used:** [UCI Credit Card Dataset](https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset) (`UCI_Credit_Card.csv`)  
 - **Size:** 30,000+ customer records with billing history, payment amounts, credit limits, and repayment status.  
@@ -12,7 +12,7 @@
 
 ---
 
-## 📖 Workflow
+## Workflow
 
 The EWS system follows these steps:
 
@@ -49,7 +49,7 @@ The EWS system follows these steps:
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 +-------------------+
 | Data Input Layer | <-- CSV transactional data
