@@ -63,5 +63,4 @@ The EWS system follows these steps:
 
 6. Alerts & Messaging: Generate SMS templates for high-risk customers.
 
-Visualization: ERS distribution, projected trends, and model evaluation charts.
 ---
