@@ -64,3 +64,15 @@ The EWS system follows these steps:
 6. Alerts & Messaging: Generate SMS templates for high-risk customers.
 
 ---
+### Results and Visualization
+
+Final Credit Risk Distribution
+
+This bar chart shows the distribution of customers classified into Low, Medium, and High final risk levels after combining ERS signals and ML predictions.
+
+<img width="583" height="402" alt="Final Credit Risk Distribution" src="https://github.com/user-attachments/assets/c2581ed4-8704-4c3c-8cd0-e08a4cbf5bf0" />
+
+Interpretation:
+- Medium risk group is the largest (~16,900 customers)
+- High risk forms the second-largest (~8,500 customers)
+- Low risk is the smallest (~4,500 customers)
