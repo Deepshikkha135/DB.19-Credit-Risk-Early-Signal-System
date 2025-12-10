@@ -26,14 +26,14 @@ The EWS system follows these steps:
 3. **Rule-based ERS Engine:**
    - Assigns scores based on utilization, payment ratio, delay trend, and spend spike.  
    - Categorizes customers into **Low, Medium, High risk** (`ers_flag`).  
-4. **ML Model (Optional):**
+4. **ML Model:**
    - Features: `util_6`, `pay_ratio_6`, `delay_trend`, `spike`, `pay_drop`, `util_change`.  
    - Apply **SMOTE** for class balance.  
    - Train **Logistic Regression** and **Random Forest** models.  
    - Predict probability of default and bucket into **Low, Medium, High** (`ml_bucket`).  
 5. **Final Risk Decision:**
    - Combine **ERS score** and **ML bucket** into `final_risk`.  
-   - If either is High → High; if either is Medium → Medium; else Low.  
+   - If either is High, then High; if either is Medium, then Medium; else Low.  
 6. **Alert Generation:**
    - Generate SMS templates for early warnings:
      - Soft reminders  
@@ -44,7 +44,7 @@ The EWS system follows these steps:
    - ERS distribution charts  
    - Projected ERS trend charts  
    - Default probability histogram  
-8. **Export High-risk Customers:**
+8. **Export High-risk Customers separately:**
    - Save flagged customers to `high_risk_customers.csv`.
 
 ---
