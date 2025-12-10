@@ -18,7 +18,7 @@ The EWS system follows these steps:
 
 1. **Data Input:** Load transactional and billing data for credit card customers.  
 2. **Feature Engineering:** Compute behavioral features including:
-   - **Utilization ratios** ('bill_amt / limit_bal' for months 4–6)  
+   - **Utilization ratios** (`bill_amt / limit_bal` for months 4–6)  
    - **Payment ratios** (`pay_amt / bill_amt` for months 4–6)  
    - **Behavioral trends** (`pay_drop`, `util_change`)  
    - **Spend spike** (`bill_amt6 / mean(bill_amt4-6)`)  
