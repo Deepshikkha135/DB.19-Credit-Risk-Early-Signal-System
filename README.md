@@ -51,3 +51,46 @@ The ERSP-EWS-Lite system follows these steps:
 
 ## 🏗 Architecture
 
++-------------------+
+| Data Input Layer | <-- CSV transactional data
++-------------------+
+|
+v
++-------------------+
+| Feature Engineering|
+| - Utilization |
+| - Payment ratios |
+| - Trends & spikes |
++-------------------+
+|
+v
++-------------------+ +-------------------+
+| Rule-based ERS | ---> | ML Prediction |
+| Scoring Engine | | (Logistic / RF) |
++-------------------+ +-------------------+
+| |
+v v
++-------------------+ +-------------------+
+| Risk Flagging |<----- Combine ERS + ML |
++-------------------+ +-------------------+
+|
+v
++-------------------+
+| Alerts & Messaging | <-- SMS templates to high-risk customers
++-------------------+
+|
+v
++-------------------+
+| Visualization | <-- ERS & ML charts
++-------------------+
+
+---
+
+**Components Explained:**
+- **Input:** Customer billing & payment data  
+- **Processing:** Compute behavioral features → Rule-based ERS → ML prediction  
+- **Decision Layer:** Combine ERS + ML → final risk  
+- **Output Layer:** Export flagged customers, generate alerts, visualize results
+
+---
+
