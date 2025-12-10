@@ -65,12 +65,3 @@ The EWS system follows these steps:
 
 Visualization: ERS distribution, projected trends, and model evaluation charts.
 ---
-
-**Components Explained:**
-- **Input:** Customer billing & payment data  
-- **Processing:** Compute behavioral features → Rule-based ERS → ML prediction  
-- **Decision Layer:** Combine ERS + ML → final risk  
-- **Output Layer:** Export flagged customers, generate alerts, visualize results
-
----
-
