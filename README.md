@@ -51,39 +51,19 @@ The EWS system follows these steps:
 
 ## Architecture
 
-+-------------------+
-| Data Input Layer | <-- CSV transactional data
-+-------------------+
-|
-v
-+-------------------+
-| Feature Engineering|
-| - Utilization |
-| - Payment ratios |
-| - Trends & spikes |
-+-------------------+
-|
-v
-+-------------------+ +-------------------+
-| Rule-based ERS | ---> | ML Prediction |
-| Scoring Engine | | (Logistic / RF) |
-+-------------------+ +-------------------+
-| |
-v v
-+-------------------+ +-------------------+
-| Risk Flagging |<----- Combine ERS + ML |
-+-------------------+ +-------------------+
-|
-v
-+-------------------+
-| Alerts & Messaging | <-- SMS templates to high-risk customers
-+-------------------+
-|
-v
-+-------------------+
-| Visualization | <-- ERS & ML charts
-+-------------------+
+1. Data Input Layer: Load customer transactional and billing data from CSV.
 
+2. Feature Engineering: Compute utilization, payment ratios, behavioral trends, and spend spikes.
+
+3. Rule-based ERS Engine: Score customers based on risk rules.
+
+4. ML Prediction (optional): Logistic Regression / Random Forest predicts default probabilities.
+
+5. Risk Flagging: Combine ERS score and ML bucket to determine final risk.
+
+6. Alerts & Messaging: Generate SMS templates for high-risk customers.
+
+Visualization: ERS distribution, projected trends, and model evaluation charts.
 ---
 
 **Components Explained:**
